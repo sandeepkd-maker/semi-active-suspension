@@ -1,0 +1,26 @@
+PS-2 focuses on designing a semi-active suspension controller for a vehicle.
+The system is based on a quarter-car model, consisting of:
+Sprung mass (vehicle body / cargo)
+Unsprung mass (wheel assembly)
+Only road displacement input is provided; all vehicle states must be computed through simulation.
+The controller controls the damping coefficient c(t) in real time.
+The damping value is constrained between Cmin and Cmax.
+A 4 time-step actuator delay is included, making the problem more realistic.
+The controller is allowed to use:
+Sprung mass acceleration
+Unsprung mass acceleration
+Any causal internal memory (filters, buffers, etc.)
+The main goal is to:
+Reduce sprung mass displacement
+Minimize jerk (rate of change of acceleration)
+Improve ride comfort and cargo safety
+Performance is evaluated on multiple road profiles.
+Metrics used for evaluation include:
+RMS displacement
+Maximum displacement
+RMS jerk
+Comfort score
+Final submission requires:
+A CSV file with computed metrics
+A report PDF with plots and explanation
+The problem emphasizes control logic and system understanding, not machine learning.
